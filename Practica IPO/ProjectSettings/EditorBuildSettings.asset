@@ -5,10 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Alumnos.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Login.unity
     guid: d1c843347497943488526bdd03a2238f
+  - enabled: 1
+    path: Assets/Scenes/Alumnos.unity
+    guid: cd0fbd951597044a981e8ce9252212b1
+  - enabled: 1
+    path: Assets/Scenes/Empresas.unity
+    guid: 847c41081877939469c8225d24d5e058
+  - enabled: 1
+    path: Assets/Scenes/Profesores.unity
+    guid: 049b194f264ab2e4db31ff2df436d93f
   m_configObjects: {}
