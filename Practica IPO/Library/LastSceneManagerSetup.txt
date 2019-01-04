@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Empresas.unity
+- path: Assets/Scenes/LeyOrganica.unity
   isLoaded: 1
   isActive: 1
