@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/LeyOrganica.unity
+- path: Assets/Scenes/Oferta de prueba.unity
   isLoaded: 1
   isActive: 1
