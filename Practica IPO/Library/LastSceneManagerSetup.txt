@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Oferta de prueba.unity
+- path: Assets/Scenes/Alumnos1.unity
   isLoaded: 1
   isActive: 1
