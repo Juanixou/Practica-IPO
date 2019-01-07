@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/CV a PDF.unity
-=======
-- path: Assets/Scenes/Alumnos.unity
->>>>>>> master
+- path: Assets/Scenes/LeyOrganica.unity
   isLoaded: 1
   isActive: 1
