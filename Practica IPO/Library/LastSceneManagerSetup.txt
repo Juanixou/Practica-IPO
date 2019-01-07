@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/CV a PDF.unity
+=======
 - path: Assets/Scenes/Alumnos.unity
+>>>>>>> master
   isLoaded: 1
   isActive: 1
