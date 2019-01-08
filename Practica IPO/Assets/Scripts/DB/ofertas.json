@@ -1,0 +1,20 @@
+{
+    "Items": [
+        {
+            "id": 1,
+            "titulo": "Practicas Programación",
+            "empresa": "Program SL",
+            "fechaInicio": "08/01/2019",
+            "fechaFinal": "09/01/2019",
+            "descripcion": "Estas practicas consisten en programar."
+        },
+        {
+            "id": 2,
+            "titulo": "Practicas Derecho",
+            "empresa": "Abogados SL",
+            "fechaInicio": "10/01/2019",
+            "fechaFinal": "10/03/2019",
+            "descripcion": "Practicaras en juicios de defensa gratuita."
+        }
+    ]
+}
