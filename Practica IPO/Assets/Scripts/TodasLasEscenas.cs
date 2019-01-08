@@ -45,4 +45,14 @@ public class TodasLasEscenas : MonoBehaviour
         SceneManager.LoadScene("Inscripciones Realizadas");
     }
 
+    public void CambiarInfoAlumnos()
+    {
+        SceneManager.LoadScene("Info Alumnos");
+    }
+
+    public void CambiarInfoEmpresas()
+    {
+        SceneManager.LoadScene("Info Empresas");
+    }
+
 }

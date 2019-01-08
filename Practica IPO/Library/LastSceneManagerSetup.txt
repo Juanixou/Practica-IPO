@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Info Alumnos.unity
+- path: Assets/Scenes/Alumnos.unity
   isLoaded: 1
   isActive: 1
