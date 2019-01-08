@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 
 [Serializable]
-public class Inscripciones : MonoBehaviour
+public class Inscripciones
 {
     public int id;
     public string estado;

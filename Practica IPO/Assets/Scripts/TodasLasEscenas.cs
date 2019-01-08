@@ -22,7 +22,7 @@ public class TodasLasEscenas : MonoBehaviour
 
     public void VerMisOfertas()
     {
-
+        SceneManager.LoadScene("Ver Ofertas");
     }
 
     public void CambiarANotificaciones()
@@ -33,5 +33,10 @@ public class TodasLasEscenas : MonoBehaviour
     public void CambiarEmpresas()
     {
         SceneManager.LoadScene("Empresas");
+    }
+
+    public void CambiarOfertasAlumnos()
+    {
+        SceneManager.LoadScene("Ver Ofertas Alumnos");
     }
 }

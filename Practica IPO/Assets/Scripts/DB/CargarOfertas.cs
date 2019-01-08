@@ -7,15 +7,18 @@ using UnityEngine.UI;
 public class CargarOfertas : MonoBehaviour
 {
     List<Ofertas> todasLasOfertas;
+    List<Inscripciones> todasLasInscripciones;
     public GameObject datos;
-    public GameObject scrollView;
+    public Transform scrollView;
+    public string escena;
     private GameObject objetoInstanciado;
+    private bool continuar = false;
 
     // Start is called before the first frame update
     void Start()
     {
         todasLasOfertas = new List<Ofertas>();
-
+        todasLasInscripciones = new List<Inscripciones>();
     }
 
     private void Awake()
@@ -35,24 +38,54 @@ public class CargarOfertas : MonoBehaviour
         Ofertas[] _tempLoadListData = JsonHelper.FromJson<Ofertas>(jsonToLoad);
         //Convert to List
         todasLasOfertas = _tempLoadListData.OfType<Ofertas>().ToList();
-        int y = 0;
+
+        string jsonInsc = PlayerPrefs.GetString("LasInscripciones");
+        //Load as Array
+
+        Inscripciones[] _tempLoadListInsc = JsonHelper.FromJson<Inscripciones>(jsonInsc);
+        //Convert to List
+        todasLasInscripciones = _tempLoadListInsc.OfType<Inscripciones>().ToList();
+
         foreach (Ofertas oferta in todasLasOfertas)
         {
+            
+            if (escena.Equals("OfertasAlumnos"))
+            {
+                Debug.Log("Estamos bien");
+                for(int i = 0; i < todasLasInscripciones.Count; i++)
+                {
+                    if(todasLasInscripciones[i].id == oferta.id)
+                    {
+                        continuar = true;
+                        break;
+                    }
+                }
+            }
+            if(continuar == true)
+            {
+                continuar = false;
+                continue;
+            }
             GameObject aux;
-            objetoInstanciado = Instantiate(datos);
-            objetoInstanciado.transform.SetParent(scrollView.transform, false);
-            objetoInstanciado.transform.Translate(new Vector3(0, y, 0));
+            objetoInstanciado = (GameObject)GameObject.Instantiate(datos);
+            objetoInstanciado.transform.SetParent(scrollView);
+            objetoInstanciado.transform.localScale = new Vector3(1, 1, 1);
+            objetoInstanciado.name = oferta.id.ToString();
+
             aux = objetoInstanciado.transform.Find("TituloText").gameObject;
             aux.GetComponent<Text>().text = oferta.titulo;
+
             aux = objetoInstanciado.transform.Find("EmpresaText").gameObject;
             aux.GetComponent<Text>().text = oferta.empresa;
+
             aux = objetoInstanciado.transform.Find("DescripcionText").gameObject;
             aux.GetComponent<Text>().text = oferta.descripcion;
+
             aux = objetoInstanciado.transform.Find("FechaIniText").gameObject;
             aux.GetComponent<Text>().text = oferta.fechaInicio;
+
             aux = objetoInstanciado.transform.Find("FechaFinText").gameObject;
             aux.GetComponent<Text>().text = oferta.fechaFinal;
-            y -= 3;
         }
     }
 
