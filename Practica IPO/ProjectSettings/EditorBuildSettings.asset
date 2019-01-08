@@ -5,24 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Login.unity
     guid: d1c843347497943488526bdd03a2238f
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Alumnos Miguel.unity
-    guid: 2737eb10921b14bf68cc5d60e7ad6517
   - enabled: 1
     path: Assets/Scenes/Alumnos.unity
     guid: b00420b42d6d03741a599dab9791fed2
@@ -41,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ver Ofertas.unity
     guid: 425adb7327113fc4c8d086eed7243d83
+  - enabled: 1
+    path: Assets/Scenes/Info Alumnos.unity
+    guid: 193783942b903a844b186a4da51a8b48
+  - enabled: 1
+    path: Assets/Scenes/Info Empresas.unity
+    guid: 859ca27bbd816c34ea227ad0cad5d69a
+  - enabled: 1
+    path: Assets/Scenes/Inscripciones Realizadas.unity
+    guid: 70b0186e11b128549a12241ba88d2c0a
   m_configObjects: {}

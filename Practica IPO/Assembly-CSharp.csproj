@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\ChangeMyScene.cs" />
     <Compile Include="Assets\Scripts\ControlarLoging.cs" />
     <Compile Include="Assets\Scripts\DB\CargarInscripciones.cs" />
+    <Compile Include="Assets\Scripts\DB\CargarInscripcionesRealizadas.cs" />
     <Compile Include="Assets\Scripts\DB\CargarOfertas.cs" />
     <Compile Include="Assets\Scripts\DB\GuardarInscripción.cs" />
     <Compile Include="Assets\Scripts\DB\GuardarOfertas.cs" />

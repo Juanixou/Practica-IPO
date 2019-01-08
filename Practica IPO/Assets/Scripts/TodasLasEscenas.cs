@@ -39,4 +39,10 @@ public class TodasLasEscenas : MonoBehaviour
     {
         SceneManager.LoadScene("Ver Ofertas Alumnos");
     }
+
+    public void CambiarInscripcionesRealizadas()
+    {
+        SceneManager.LoadScene("Inscripciones Realizadas");
+    }
+
 }
